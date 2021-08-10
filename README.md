@@ -1,5 +1,7 @@
 # fargon2
 
+[![Run flutter test](https://github.com/iktakahiro/fargon2/actions/workflows/test.yaml/badge.svg)](https://github.com/iktakahiro/fargon2/actions/workflows/test.yaml)
+
 A plugin for generating a hash based on Argon2 algorithm in Android / iOS platform.
 
 ## What is Argon2
