@@ -1,0 +1,30 @@
+PODS:
+  - CatCrypto (0.3.2)
+  - fargon2 (0.0.1):
+    - CatCrypto
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - CatCrypto
+  - fargon2 (from `.symlinks/plugins/fargon2/ios`)
+  - Flutter (from `Flutter`)
+
+SPEC REPOS:
+  trunk:
+    - CatCrypto
+
+EXTERNAL SOURCES:
+  fargon2:
+    :path: ".symlinks/plugins/fargon2/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  CatCrypto: a477899b6be4954e75be4897e732da098cc0a5a8
+  fargon2: bbb81a6723db7a88aed01ddf4f42619b30ba79d0
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+
+PODFILE CHECKSUM: ef97dc571303ce57d183822d6a41c820c0313c76
+
+COCOAPODS: 1.10.1

@@ -37,6 +37,7 @@ class _MyAppState extends State<MyApp> {
       }
     } catch (e) {
       print(e);
+      _argon2idHash = e.toString();
     }
   }
 
