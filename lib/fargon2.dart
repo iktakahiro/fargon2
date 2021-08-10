@@ -26,7 +26,7 @@ class Fargon2 {
   const Fargon2({
     required this.mode,
   });
-  static const MethodChannel _channel = const MethodChannel('fargon2');
+  static const MethodChannel _channel = MethodChannel('fargon2');
 
   final Fargon2Mode mode;
 
@@ -59,7 +59,9 @@ class Fargon2 {
 }
 
 class Fargon2ArgumentError implements Exception {
-  final String msg;
-  const Fargon2ArgumentError(this.msg);
-  String toString() => 'Fargon2ArgumentError: $msg';
+  const Fargon2ArgumentError(this.message);
+  final String message;
+
+  @override
+  String toString() => 'Fargon2ArgumentError: $message';
 }
