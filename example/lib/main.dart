@@ -1,15 +1,17 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:fargon2/fargon2.dart';
+import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key}) : super();
+
   @override
-  _MyAppState createState() => _MyAppState();
+  createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
@@ -23,20 +25,17 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initPlatformState() async {
     try {
-      final hash = await Fargon2(mode: Fargon2Mode.argon2id).hash(
+      final hash = await const Fargon2(mode: Fargon2Mode.argon2id).hash(
         passphrase: 'mypassphrase',
         salt: 'mysalt01',
         hashLength: 16,
       );
-      print(hash);
-
       if (mounted) {
         setState(() {
           _argon2idHash = hash;
         });
       }
     } catch (e) {
-      print(e);
       _argon2idHash = e.toString();
     }
   }

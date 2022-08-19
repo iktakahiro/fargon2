@@ -48,7 +48,7 @@ class Fargon2 {
       'memory_kibibytes': memoryKibibytes,
     };
     if (salt.length < 8) {
-      throw Fargon2ArgumentError(
+      throw const Fargon2ArgumentError(
         'salt is too short. It must be at least 8 characters.',
       );
     }

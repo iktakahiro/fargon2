@@ -1,6 +1,6 @@
+import 'package:fargon2/fargon2.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fargon2/fargon2.dart';
 
 void main() {
   const channel = MethodChannel('fargon2');
@@ -22,7 +22,7 @@ void main() {
 
   group('hash()', () {
     test('should return a hash string.', () async {
-      final fargon2 = Fargon2(mode: Fargon2Mode.argon2id);
+      const fargon2 = Fargon2(mode: Fargon2Mode.argon2id);
       expect(
         await fargon2.hash(
           passphrase: 'mypassphrase',
@@ -33,7 +33,7 @@ void main() {
     });
 
     test('should throw Fargon2ArgumentError when a salt is short.', () async {
-      final fargon2 = Fargon2(mode: Fargon2Mode.argon2id);
+      const fargon2 = Fargon2(mode: Fargon2Mode.argon2id);
 
       expect(
         () async => await fargon2.hash(
