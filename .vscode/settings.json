@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true
+  },
+  "cSpell.words": ["fargon"]
+}
