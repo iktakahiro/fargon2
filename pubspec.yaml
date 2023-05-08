@@ -1,12 +1,12 @@
 name: fargon2
 description: A plugin for generating a hash based on Argon2 algorithm in Android / iOS platform.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/iktakahiro/fargon2
 repository: https://github.com/iktakahiro/fargon2
 
 environment:
-  sdk: ">=2.17.6 <3.0.0"
-  flutter: "3.0.5"
+  sdk: ">=2.19.0 <3.0.0"
+  flutter: ">=3.7.0"
 
 dependencies:
   flutter:
