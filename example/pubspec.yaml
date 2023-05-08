@@ -1,6 +1,6 @@
 name: fargon2_example
 description: Demonstrates how to use the fargon2 plugin.
-version: 1.0.0
+version: 1.0.1
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 

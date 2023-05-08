@@ -1,6 +1,6 @@
 name: fargon2
 description: A plugin for generating a hash based on Argon2 algorithm in Android / iOS platform.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/iktakahiro/fargon2
 repository: https://github.com/iktakahiro/fargon2
 
